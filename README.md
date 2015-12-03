@@ -5,4 +5,4 @@ Off<>zz is a project to unite keyboards. In this case piano/toypiano and coding 
 
 http://keyboardsunite.com/offzz
 
-Feel free to fork and contribute to the repository with your own supercollider files if you are also exploring the combination of acoustic instruments and coding.
+If you are also exploring the combination of acoustic instruments and coding, feel free to fork and contribute to the repository with your own supercollider files...
