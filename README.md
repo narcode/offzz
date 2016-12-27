@@ -10,4 +10,4 @@ If you are also exploring the combination of acoustic instruments and coding, fe
 
 # changelog #
 
-dec 27 2017 - cloned repository to clean name of files
+dec 27 2017 - cloned repository to clean names of files
