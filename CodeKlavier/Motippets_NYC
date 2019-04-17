@@ -1,0 +1,448 @@
+/// Motippets NYC
+
+// setting up an ONGOING conditional: IF range is less than...
+// if true -> play gong sound!
+// range set to:  71 semitones...
+~snippet1 = Tdef(\1, {|ev| loop{ Ndef(~name.next, {|pitch=420,fx=88| SinOsc.ar(456*LFTri.kr(fx).range(100, pitch)) * EnvGen.kr(Env.perc) * ev.amp}).play(0,2);(1/ev.rit).wait;}}).play(quant:0).envir = (rit: ~tremoloL, amp: 0.036);
+condition not met :(
+[\pulse, \pulse2, \pulse3, \pulse4, \pulse5, \pulse6].do{|i| Ndef(i).map(\fx, Ndef(\krm3));}; ~tremoloH1
+~tremoloH1 = 8
+~tremoloH1 = 2
+~tremoloH1 = 7
+~tremoloH1 = 9
+~tremoloH1 = 7
+~tremoloH1 = 10
+~tremoloH1 = 10
+~tremoloH1 = 2
+condition not met :(
+[\pulse, \pulse2, \pulse3, \pulse4, \pulse5, \pulse6].do{|i| Ndef(i).map(\pitch, Ndef(\krm1));}; ~tremoloM1
+condition not met :(
+~tremoloM1 = 7
+~tremoloH1 = 4
+~tremoloH1 = 5
+~map_rhythm = true; ~tremoloL1;
+~tremoloH1 = 2
+condition not met :(
+~tremoloL1 = 3
+~tremoloL1 = 4
+Ndef(\gong, {FreeVerb.ar(Splay.ar(WhiteNoise.ar(Impulse.kr(0.2))+SinOsc.ar([(1234+71 )*LFTri.kr(0.1.rrand(18)).range(0.98, 1.02), 150, 299, 544*Line.kr(1, 2, 6), 1789]))*EnvGen.kr(Env.perc), 0.5, 0.95)}).play
+~tremoloL1 = 8
+[\pulse, \pulse2, \pulse3, \pulse4, \pulse5, \pulse6].do{|i| Ndef(i).map(\pitch, Ndef(\krm1));}; ~tremoloM1
+~tremoloM1 = 9
+~tremoloH1 = 4
+~tremoloH1 = 6
+~tremoloH1 = 4
+~tremoloH1 = 6
+~tremoloM1 = 3
+~tremoloH1 = 4
+~tremoloH1 = 6
+~tremoloH1 = 4
+Ndef(\gong, {FreeVerb.ar(Splay.ar(WhiteNoise.ar(Impulse.kr(0.2))+SinOsc.ar([(1234+71 )*LFTri.kr(0.1.rrand(18)).range(0.98, 1.02), 150, 299, 544*Line.kr(1, 2, 6), 1789]))*EnvGen.kr(Env.perc), 0.5, 0.95)}).play
+~tremoloH1 = 6
+~tremoloH1 = 4
+~tremoloH1 = 6
+
+
+
+~tremoloH1 = 4
+~tremoloH1 = 6
+~tremoloH1 = 4
+~tremoloM1 = 21
+~map_amplitude = true; ~tremoloL1amp;
+~tremoloL1amp = 3
+condition not met :(
+~tremoloL1amp = 4
+~map_rhythm = true; ~tremoloL1;
+~tremoloL1 = 12
+~tremoloM1 = 8
+~snippet2 = Ndef(\acc, {|note=500, amp=0.036, cut=200, bw=0.5, fx=0.1| BPF.ar(Resonz.ar(SinOsc.ar([note.lag(1), note.lag(2)*3/2, note*2, note.lag(1.5)*4/3]), (note*LFTri.kr(fx).range(1/2, 8))+80, bw), 600, 0.8) * amp.lag(0.5)}).play(0,2);
+Ndef(\gong, {FreeVerb.ar(Splay.ar(WhiteNoise.ar(Impulse.kr(0.2))+SinOsc.ar([(1234+71 )*LFTri.kr(0.1.rrand(18)).range(0.98, 1.02), 150, 299, 544*Line.kr(1, 2, 6), 1789]))*EnvGen.kr(Env.perc), 0.5, 0.95)}).play
+// setting up an ONGOING conditional: IF range is more than...
+// if true -> play gong sound!
+~tremoloM1 = 10
+// range set to:  10 semitones...
+~tremoloM1 = 2
+Ndef(\acc).map(\amp, Ndef(\krm2_2)); ~tremoloL2
+~tremoloM1 = 10
+~tremoloM1 = 2
+~tremoloM1 = 10
+~tremoloM1 = 2
+~tremoloL2 = 2
+~tremoloM1 = 10
+~tremoloM1 = 2
+~tremoloM1 = 10
+~tremoloL2 = 3
+~tremoloM1 = 2
+~tremoloM1 = 10
+Ndef(\gong, {FreeVerb.ar(Splay.ar(WhiteNoise.ar(Impulse.kr(0.2))+SinOsc.ar([(1234+71 )*LFTri.kr(0.1.rrand(18)).range(0.98, 1.02), 150, 299, 544*Line.kr(1, 2, 6), 1789]))*EnvGen.kr(Env.perc), 0.5, 0.95)}).play~
+~tremoloM1 = 10~
+~tremoloL2 = 6tremoloL2
+ = 5tremoloM1 = 2
+
+
+~tremoloL2 = 7
+~tremoloM1 = 2
+~tremoloL2 = 8
+~tremoloM1 = 10
+~tremoloL2 = 2
+~tremoloL2 = 3
+~map_amplitude = true; ~tremoloL1amp;
+~map_amplitude = true; ~tremoloL1amp;
+~tremoloM1 = 10
+~tremoloL1amp = 4
+~tremoloM1 = 2
+~tremoloL1amp = 5
+~tremoloM1 = 10
+~tremoloL1amp = 6
+Ndef(\acc).map(\amp, Ndef(\krm2_2)); ~tremoloL2
+Ndef(\acc).map(\amp, Ndef(\krm2_2)); ~tremoloL2
+Ndef(\acc).map(\amp, Ndef(\krm2_2)); ~tremoloL2
+~tremoloM1 = 2
+Ndef(\acc).map(\amp, Ndef(\krm2_2)); ~tremoloL2
+condition not met :(
+~tremoloM1 = 10
+~tremoloM1 = 2
+Ndef(\gong, {FreeVerb.ar(Splay.ar(WhiteNoise.ar(Impulse.kr(0.2))+SinOsc.ar([(1234+10 )*LFTri.kr(0.1.rrand(18)).range(0.98, 1.02), 150, 299, 544*Line.kr(1, 2, 6), 1789]))*EnvGen.kr(Env.perc), 0.5, 0.95)}).playNdef(\acc).map(\amp, Ndef(\krm2_2)
+
+~tremoloM1 = 10)
+~tremoloM1 = 2
+; ~tremoloL2
+~tremoloM1 = 10
+~tremoloM1 = 2
+Ndef(\acc).map(\amp, Ndef(\krm2_2)); ~tremoloL2
+~tremoloM1 = 10
+~tremoloL2 = 7
+~tremoloM1 = 2
+~tremoloM1 = 12
+~map_rhythm = true; ~tremoloL1;
+~tremoloL1 = 12
+~tremoloM1 = 13
+~tremoloL1 = 13
+~tremoloL1 = 14
+~tremoloM1 = 14
+~tremoloL1 = 15
+~tremoloL1 = 16
+~tremoloL1 = 18
+~tremoloL1 = 19
+~tremoloL1 = 20
+condition not met :(
+~tremoloL1 = 21
+~tremoloH1 = 3
+Ndef(\acc).map(\fx, Ndef(\krm2_3)); ~tremoloH2
+~tremoloH2 = 5
+~tremoloH2 = 14
+// setting up a conditional: IF number of notes played is more than 100 in...
+~tremoloH2 = 15Ndef
+condition not met :(
+~tremoloH2 = 14(
+\gong, {FreeVerb.ar(Splay.ar(WhiteNoise.ar(Impulse.kr(0.2))+SinOsc.ar([(1234+10 )*LFTri.kr(0.1.rrand(18)).range(0.98, 1.02), 150, 299, 544*Line.kr(1, 2, 6), 1789]))*EnvGen.kr(Env.perc), 0.5, 0.95)}).play~tremoloH2 = 14
+
+
+// if true -> stop ~snippet1
+~tremoloM1 = 15
+// more than 100 notes played in the next  15 seconds?
+notes played:  0
+notes played:  13
+~tremoloM1 = 1
+// setting up a conditional: IF number of notes played is more than 100 in...
+notes played:  30
+~tremoloM1 = 3
+notes played:  47
+~tremoloM1 = 8
+// setting up a conditional: IF number of notes played is more than 100 in...
+notes played:  73
+~tremoloM1 = 11
+~tremoloM1 = 13notes played:  94
+
+~tremoloM1 = 14
+// setting up a conditional: IF number of notes played is more than 100 in...
+~tremoloM1 = 12//WOW! I played:  112!!!
+~snippet1.stop;
+
+~tremoloM1 = 10
+~tremoloM1 = 9
+~tremoloM1 = 8
+~tremoloM1 = 7
+~tremoloM1 = 2
+~tremoloM1 = 1
+condition not met :(
+Ndef(\acc).map(\note, Ndef(\krm2_1)); ~tremoloM2
+~tremoloM2 = 12
+Ndef(\acc).map(\note, Ndef(\krm2_1)); ~tremoloM2
+~tremoloM2 = 1
+~tremoloM2 = 12
+Ndef(\gong, {FreeVerb.ar(Splay.ar(WhiteNoise.ar(Impulse.kr(0.2))+SinOsc.ar([(1234+10 )*LFTri.kr(0.1.rrand(18)).range(0.98, 1.02), 150, 299, 544*Line.kr(1, 2, 6), 1789]))*EnvGen.kr(Env.perc), 0.5, 0.95)}).play
+~tremoloM2 = 1
+~tremoloM2 = 12
+~tremoloM2 = 1
+~tremoloM2 = 12
+~tremoloM2 = 1
+// setting up an ONGOING conditional: IF range is more than...
+~tremoloM2 = 12
+~tremoloM2 = 1
+
+~tremoloL1 = 1Ndef
+// if true -> play gong sound!
+// if true -> play gong sound!
+~tremoloM2 = 1(
+// more than 100 notes played in the next  1 seconds?
+// more than 100 notes played in the next  1 senoconds?
+tes played:  0
+~tremoloM2 = 12\gong
+~tremoloM2 = 1,
+ {FreeVerb.ar(Splay.ar(WhiteNoise.ar(Impulse.kr(0.2))+SinOsc.ar([(1234+71 )*LFTri.kr(0.1.rrand(18)).range(0.98, 1.02), 150, 299, 544*Line.kr(1, 2, 6), 1789]))*EnvGen.kr(Env.perc), 0.5, 0.95)}).play~tremoloM2 = 12
+
+~tremoloM2 = 12
+~tremoloM2 = 1
+~tremoloM2 = 2
+~tremoloM2 = 3
+~tremoloM2 = 4
+~snippet1 = Tdef(\1, {|ev| loop{ Ndef(~name.next, {|pitch=420,fx=88| SinOsc.ar(456*LFTri.kr(fx).range(100, pitch)) * EnvGen.kr(Env.perc) * ev.amp}).play(0,2);(1/ev.rit).wait;}}).play(quant:0).envir = (rit: ~tremoloL, amp: 0.036);
+~tremoloM2 = 5
+~tremoloM2 = 6
+~tremoloM2 = 7
+~tremoloM2 = 8
+~tremoloM2 = 9
+~tremoloM2 = 10Ndef(\gong, {FreeVerb.ar(Splay.ar(WhiteNoise.ar(Impulse.kr(0.2))+SinOsc.ar([(1234+1 )*LFTri.kr(0.1.rrand(18)).range(0.98, 1.02), 150, 299, 544*Line.kr(1, 2, 6), 1789]))*EnvGen.kr(Env.perc), 0.5,
+0.95)}).play
+
+~tremoloM2 = 12
+~tremoloM2 = 12
+~tremoloM2 = 2
+~tremoloM2 = 12
+~tremoloL1 = 15
+~tremoloL1 = 16
+~tremoloL1 = 17
+condition not met :(
+~tremoloL1 = 18
+~tremoloL1 = 19Ndef
+~tremoloL1 = 21(\gong, {FreeVerb.ar(Splay.ar(WhiteNoise.ar(Impulse.kr(0.2))+SinOsc.ar([(1234+1 )*LFTri.kr(0.1.rrand(18)).range(0.98, 1.02), 150, 299, 544*Line.kr(1, 2, 6), 1789]))*EnvGen.kr(Env.perc), 0.5, 0.95)}).play
+
+
+~tremoloL1 = 12
+Ndef(\gong, {FreeVerb.ar(Splay.ar(WhiteNoise.ar(Impulse.kr(0.2))+SinOsc.ar([(1234+10 )*LFTri.kr(0.1.rrand(18)).range(0.98, 1.02), 150, 299, 544*Line.kr(1, 2, 6), 1789]))*EnvGen.kr(Env.perc), 0.5, 0.95)}).play
+~tremoloM2 = 10
+~tremoloH2 = 2
+Ndef(\gong, {FreeVerb.ar(Splay.ar(WhiteNoise.ar(Impulse.kr(0.2))+SinOsc.ar([(1234+1 )*LFTri.kr(0.1.rrand(18)).range(0.98, 1.02), 150, 299, 544*Line.kr(1, 2, 6), 1789]))*EnvGen.kr(Env.perc), 0.5, 0.95)}).play
+~tremoloH2 = 4
+~tremoloH2 = 4
+~map_amplitude = true; ~tremoloL1amp;
+~tremoloH2 = 5
+~tremoloL1amp = 3
+~tremoloH2 = 7
+Ndef(\gong, {FreeVerb.ar(Splay.ar(WhiteNoise.ar(Impulse.kr(0.2))+SinOsc.ar([(1234+71 )*LFTri.kr(0.1.rrand(18)).range(0.98, 1.02), 150, 299, 544*Line.kr(1, 2, 6), 1789]))*EnvGen.kr(Env.perc), 0.5, 0.95)}).play
+Ndef(\gong, {FreeVerb.ar(Splay.ar(WhiteNoise.ar(Impulse.kr(0.2))+SinOsc.ar([(1234+1 )*LFTri.kr(0.1.rrand(18)).range(0.98, 1.02), 150, 299, 544*Line.kr(1, 2, 6), 1789]))*EnvGen.kr(Env.perc), 0.5, 0.95)}).play
+// setting up an ONGOING conditional: IF range is more than...
+~tremoloH2 = 12
+// if true -> play gong sound!
+// range set to:  12 semitones...
+~tremoloH2 = 13
+~tremoloH2 = 12
+Ndef(\gong, {FreeVerb.ar(Splay.ar(WhiteNoise.ar(Impulse.kr(0.2))+SinOsc.ar([(1234+1 )*LFTri.kr(0.1.rrand(18)).range(0.98, 1.02), 150, 299, 544*Line.kr(1, 2, 6), 1789]))*EnvGen.kr(Env.perc), 0.5, 0.95)}).play
+~tremoloH2 = 12
+~tremoloH2 = 13
+~tremoloH2 = 12
+~tremoloH2 = 7
+Ndef(\gong, {FreeVerb.ar(Splay.ar(WhiteNoise.ar(Impulse.kr(0.2))+SinOsc.ar([(1234+71 )*LFTri.kr(0.1.rrand(18)).range(0.98, 1.02), 150, 299, 544*Line.kr(1, 2, 6), 1789]))*EnvGen.kr(Env.perc), 0.5, 0.95)}).play
+~tremoloH2 = 1
+~tremoloH2 = 1
+condition not met :(
+condition not met :(
+Ndef(\gong, {FreeVerb.ar(Splay.ar(WhiteNoise.ar(Impulse.kr(0.2))+SinOsc.ar([(1234+1 )*LFTri.kr(0.1.rrand(18)).range(0.98, 1.02), 150, 299, 544*Line.kr(1, 2, 6), 1789]))*EnvGen.kr(Env.perc), 0.5, 0.95)}).play
+[\pulse, \pulse2, \pulse3, \pulse4, \pulse5, \pulse6].do{|i| Ndef(i).map(\pitch, Ndef(\krm1));}; ~tremoloM1
+~tremoloM1 = 2
+Ndef(\acc).map(\note, Ndef(\krm2_1)); ~tremoloM2
+~tremoloH2 = 3
+Ndef(\gong, {FreeVerb.ar(Splay.ar(WhiteNoise.ar(Impulse.kr(0.2))+SinOsc.ar([(1234+1 )*LFTri.kr(0.1.rrand(18)).range(0.98, 1.02), 150, 299, 544*Line.kr(1, 2, 6), 1789]))*EnvGen.kr(Env.perc), 0.5, 0.95)}).play
+Ndef(\gong, {FreeVerb.ar(Splay.ar(WhiteNoise.ar(Impulse.kr(0.2))+SinOsc.ar([(1234+12 )*LFTri.kr(0.1.rrand(18)).range(0.98, 1.02), 150, 299, 544*Line.kr(1, 2, 6), 1789]))*EnvGen.kr(Env.perc), 0.5, 0.95)}).play
+~tremoloM2 = 3
+~tremoloH2 = 4
+Ndef(\gong, {FreeVerb.ar(Splay.ar(WhiteNoise.ar(Impulse.kr(0.2))+SinOsc.ar([(1234+71 )*LFTri.kr(0.1.rrand(18)).range(0.98, 1.02), 150, 299, 544*Line.kr(1, 2, 6), 1789]))*EnvGen.kr(Env.perc), 0.5, 0.95)}).play
+~tremoloH2 = 12
+~tremoloH2 = 5
+~tremoloM2 = 9
+Ndef(\gong, {FreeVerb.ar(Splay.ar(WhiteNoise.ar(Impulse.kr(0.2))+SinOsc.ar([(1234+1 )*LFTri.kr(0.1.rrand(18)).range(0.98, 1.02), 150, 299, 544*Line.kr(1, 2, 6), 1789]))*EnvGen.kr(Env.perc), 0.5, 0.95)}).play
+~tremoloH2 = 12
+~tremoloM2 = 2
+Ndef(\gong, {FreeVerb.ar(Splay.ar(WhiteNoise.ar(Impulse.kr(0.2))+SinOsc.ar([(1234+12 )*LFTri.kr(0.1.rrand(18)).range(0.98, 1.02), 150, 299, 544*Line.kr(1, 2, 6), 1789]))*EnvGen.kr(Env.perc), 0.5, 0.95)}).play
+~map_rhythm = true; ~tremoloL1;
+~tremoloL1 = 17
+~tremoloL1 = 16
+Ndef(\gong, {FreeVerb.ar(Splay.ar(WhiteNoise.ar(Impulse.kr(0.2))+SinOsc.ar([(1234+1 )*LFTri.kr(0.1.rrand(18)).range(0.98, 1.02), 150, 299, 544*Line.kr(1, 2, 6), 1789]))*EnvGen.kr(Env.perc), 0.5, 0.95)}).p~Ndef(\gong, {FreeVerb.ar(Splay.ar(WhiteNoise.ar(Impulse.kr(0.2))+SinOsc.ar([(1234+10 )*LFTri.kr(0.1.rrand(18)).range(0.98, 1.02), 150, 299, 544*Line.kr(1, 2, 6), 1789]))*EnvGen.kr(Env.perc), 0.5, 0.95)}).play
+tremoloL1 = 15lay
+
+
+condition not met :(
+~tremoloL1 = 14
+~tremoloL1 = 13
+Ndef(\gong, {FreeVerb.ar(Splay.ar(WhiteNoise.ar(Impulse.kr(0.2))+SinOsc.ar([(1234+12 )*LFTri.kr(0.1.rrand(18)).range(0.98, 1.02), 150, 299, 544*Line.kr(1, 2, 6), 1789]))*EnvGen.kr(Env.perc), 0.5, 0.95)}).play
+~tremoloL1 = 12
+Ndef(\gong, {FreeVerb.ar(Splay.ar(WhiteNoise.ar(Impulse.kr(0.2))+SinOsc.ar([(1234+1 )*LFTri.kr(0.1.rrand(18)).range(0.98, 1.02), 150, 299, 544*Line.kr(1, 2, 6), 1789]))*EnvGen.kr(Env.perc), 0.5, 0.95)}).play
+~tremoloL1 = 11
+~tremoloL1 = 9
+~tremoloL1 = 7
+~tremoloL1 = 5
+~tremoloL1 = 3
+~tremoloL1 = 1
+Ndef(\gong, {FreeVerb.ar(Splay.ar(WhiteNoise.ar(Impulse.kr(0.2))+SinOsc.ar([(1234+1 )*LFTri.kr(0.1.rrand(18)).range(0.98, 1.02), 150, 299, 544*Line.kr(1, 2, 6), 1789]))*EnvGen.condition not met :(
+kr(Env.perc), 0.5, 0.95)}).play
+
+Ndef(\gong, {FreeVerb.ar(Splay.ar(WhiteNoise.ar(Impulse.kr(0.2))+SinOsc.ar([(1234+71 )*LFTri.kr(0.1.rrand(18)).range(0.98, 1.02), 150, 299, 544*Line.kr(1, 2, 6), 1789]))*EnvGen.kr(Env.perc), 0.5, 0.95)}).play
+// setting up a conditional: IF number of notes played is more than 100 in...
+Ndef(\gong, {FreeVerb.ar(Splay.ar(WhiteNoise.ar(Impulse.kr(0.2))+SinOsc.ar([(1234+1 )*LFTri.kr(0.1.rrand(18)).range(0.98, 1.02), 150, 299, 544*Line.kr(1, 2, 6), 1789]))*EnvGen.kr(Env.perc), 0.5, 0.95)}).play
+GOMB! //is activating...
+condition not met :(
+Ndef(\gong, {FreeVerb.ar(Splay.ar(WhiteNoise.ar(Impulse.kr(0.2))+SinOsc.ar([(1234+10 )*LF// GOMB countdown seTt to:  55
+ri.kr(0.1.rrand(18)).range(notes played:  0
+0.98,notes played:  2
+notes played:  2
+ 1.02), 150, 299, 544*Line.kr(1, 2, 6), 1789]))*EnvGen.kr(Env.perc), 0.5, 0.95)}).play
+
+notes played:  3
+notes played:  3
+notes played:  3
+~tremoloH2 = 11
+notes played:  8
+~tremoloL1 = 12
+notes played:  13
+Ndef(\gong, {FreeVerb.ar(Splay.ar(WhiteNoise.ar(Impulse.kr(0.2))+SinOsc.ar([(1234+1 )*LFTri.kr(0.1.rrand(18)).range(0.98, 1.02), 150, 299, 544*Line.kr(1, 2, 6), 1789]))*EnvGen.kr(Env.perc), 0.5, 0.95)}).play
+notes played:  13
+notes played:  13
+notes played:  18
+Ndef(\gong, {FreeVerb.ar(Splay.ar(WhiteNoise.ar(Impulse.kr(0.2))+SinOsc.ar([(1234+71 )*LFTri.kr(0.1.rrand(18)).range(0.98, 1.02), 150, 299, 544*Line.kr(1, 2, 6), 1789]))*EnvGen.kr(Env.perc), 0.5, 0.95)}).play
+notes played:  18
+notes played:  18
+notes played:  23
+notes played:  23
+condition not met :(
+notes played:  23
+~map_rhythm = true; ~tremoloL1;
+notes played:  26
+notes played:  26
+~tremoloL1 = 1
+notes played:  33
+notes played:  33
+notes played:  33
+Ndef(\gong, {FreeVerb.ar(Splay.ar(WhiteNoise.ar(Impulse.kr(0.2))+SinOsc.ar([(1234+1 )*LFTri.kr(0.1.rrand(18)).range(0.98, 1.02), 150, 299, 544*Line.kr(1, 2, 6), 1789]))*EnvGen.kr(Env.perc), 0.5, 0.95)}).play
+notes played:  33
+notes played:  33
+notes played:  33
+notes played:  33
+notes played:  36
+~tremoloM2 = 13
+notes played:  38
+notes played:  41
+~tremoloM2 = 1
+notes played:  44
+notes played:  47
+notes played:  47
+notes played:  52
+Ndef(\gong, {FreeVerb.ar(Splay.ar(WhiteNoise.ar(Impulse.kr(0.2))+SinOsc.ar([(1234+12 )*LFTri.kr(0.1.rrand(18)).range(0.98, 1.02), 150, 299, 544*Line.kr(1, 2, 6), 1789]))*EnvGen.kr(Env.perc), 0.5, 0.95)}).play
+~tremoloM2 = 2notes played:  57
+
+notes played:  57
+Ndef(\gong, {FreeVerb.ar(Splay.ar(WhiteNoise.ar(Impulse.kr(0.2))+SinOsc.ar([(1234+1 )*LFTri.kr(0.1.rrand(18)).range(0.98, 1.02), 150, 299, 544*Line.kr(1, 2, 6), 1789]))*EnvGen.kr(Env.perc), 0.5, 0.95)}).play
+notes played:  58
+
+notes played:  58
+Ndef(\gong, {FreeVerb.ar(Splay.ar(WhiteNoise.ar(Impulse.kr(0.2))+SinOsc.ar([(1234+71 )*LFTri.kr(0.1.rrand(18)).range(0.98, 1.02), 150, 299, 544*Line.kr(1, 2, 6), 1789]))*EnvGen.kr(Env.perc), 0.5, 0.95)}).play
+notes played:  58
+notes played:  58
+notes played:  58
+notes played:  58
+notes played:  58
+~tremoloH2 = 1
+notes played:  63
+notes played:  63
+notes played:  63
+notesNdef(\gong, {FreeVerb.ar(Splay played:  63
+.notes played:  65
+~tremoloM2 = 1ar
+notes played:  68
+(WhiteNoise.ar(Impulse.kr(0.2))+SinOsc.ar([(1234+10 )*LFTri.kr(0.1.rrand(18)).range(0.98, 1.02), 150, 299, 544*Line.kr(1, 2, 6), 1789]))*EnvGen.kr(Env.perc), 0.5, 0.95)}).play
+
+Ndef(\gong, {FreeVerb.ar(Splay.ar(WhiteNoise.ar(Impulse.kr(0.2))+SinOsc.ar([(1234notes played:  69
++notes played:  73
+
+~tremoloM2 = 2~
+condition not met :(
+notes played:  75
+tremoloM2 = 21 )*LFTri.kr(0.1.rrand(18)).range(0.98, 1.02), 150, 299, 544*Line.kr(1, 2, 6), 1789]))*EnvGen.kr(Env.perc), 0.5, 0.95)}).play
+
+notes played:  76
+notes played:  82
+notes played:  85
+~tremoloM2 = 3
+notes played:  87
+notes played:  87
+// setting up a conditional: IF number of notes played is more than 100 in...
+Ndef(\gong, {FreeVerb.ar(Splay.ar(WhiteNoise.ar(Impulse.kr(0.2))+SinOsc.ar([(1234+1 )*LFTri.kr(0.1.rrand(18)).range(0.98, 1.02), 150, 299, 544*Line.kr(1, 2, 6), 1789]))*EnvGen.kr(Env.perc), 0.5, 0.95)}).playcondition not met :(
+
+GOMB! //is activating...
+Ndef(\gong, {FreeVerb.ar(Splay.ar(WhiteNoise.ar(Impulse.kr(0.2))+SinOsc.ar([(1234+12 )*LFTri.kr(0.1.rrand(18)).range(0.98, 1.02), 150, 299, 544*Line.kr(1, 2, 6), 1789]))*EnvGen.kr(Env.perc), 0.5, 0.95)}).play
+// GOMB countdown set to:  72
+notes played:  0
+notes played:  3
+notes played:  3
+~tremoloM2 = 10notes played:  9
+
+~tremoloM2 = 9
+notes played:  16
+notes played:  22
+Ndef(\gong, {FreeVerb.ar(Splay.ar(WhiteNoise.ar(Impulse.kr(0.2))+SinOsc.ar([(1234+1 )*LFTri.kr(0.1.rrand(18)).range(0.98, 1.02), 150, 299, 544*Line.kr(1, 2, 6), 1789]))*EnvGen.kr(Env.perc), 0.5, 0.95)}).play
+notes played:  28
+notes played:  35
+notes played:  42
+notes played:  54
+notes played:  67
+notes played:  76
+notes played:  76
+notes played:  76
+~tremoloM2 = 1notes played:  80
+
+Ndef(\gong, {FreeVerb.ar(Splay.ar(WhiteNoise.ar(Impulse.kr(0.2))+SinOsc.ar([(1234+12 )*LFTri.kr(0.1.rrand(18)).range(0.98, 1.02), 150, 299, 544*Line.kr(1, 2, 6), 1789]))*EnvGen.kr(Env.perc), 0.5, 0.95)}).play
+notes played:  80
+notes played:  80
+notes played:  80
+Ndef(\gong, {FreeVerb.ar(Splay.ar(WhiteNoise.ar(Impulse.kr(0.2))+SinOsc.ar([(1234+71 )*LFTri.kr(0.1.rrand(18)).range(0.98, 1.02), 150, 299, 544*Line.kr(1, 2, 6), 1789]))*EnvGen.kr(Env.perc), 0.5, 0.95)}).play
+notes played:  80
+Ndef(\gong, {FreeVerb.ar(Splay.ar(WhiteNoise.ar(Impulse.kr(0.2))+SinOsc.ar([(1234+1 )*LFTri.kr(0.1.rrand(18)).range(0.98, 1.02), 150, 299, 544*Line.kr(1, 2, 6), 1789]))*EnvGen.kr(Env.perc), 0.5, 0.95)}).play
+notes played:  80
+Ndef(\gong, {FreeVerb.ar(Splay.ar(WhiteNoise.ar(Impulse.kr(0.2))+SinOsc.ar([(1234+10 )*LFTri.kr(0.1.rrand(18)).range(0.98, 1.02), 150, 299, 544*Line.kr(1, 2, 6), 1789]))*EnvGen.kr(Env.perc), 0.5, 0.95)}).playnotes played:  80
+
+notes played:  81
+notes played:  82
+notes played:  87
+~tremoloM2 = 8notes played:  97
+
+//WOW! I played:  105!!!
+// GOMB countdown started!
+~tremoloM2 = 1
+Ndef(\gong, {FreeVerb.ar(Splay.ar(WhiteNoise.ar(Impulse.kr(0.2))+SinOsc.ar([(1234+1 )*LFTri.kr(0.1.rrand(18)).range(0.98, 1.02), 150, 299, 544*Line.kr(1, 2, 6), Ndef(\gong, {FreeVerb.ar(Splay.ar(WhiteNoise.ar(Impulse.kr(0.2))+SinOsc.ar1([(1234+12 )*LFTri.kr(0.1.rrand(18)).ran7ge(0.988, 1.02), 150, 9299, 544*Line.k]r()1,) 2, *6), 1789]))*EnvGEenn.kr(vGen.kr(Env.perc)E, 0.5, 0.95)}).playnv.perc), 0.5, 0.95)}).play
+
+
+[\pulse, \pulse2, \pulse3, \pulse4, \pulse5, \pulse6].do{|i| Ndef(i).map(\pitch, Ndef(\krm1));}; ~tremoloM1
+Ndef(\gong, {FreeVerb.ar(Splay.ar(WhiteNoise.ar(Impulse.kr(0.2))+SinOsc.ar([(1234+71 )*LFTri.kr(0.1.rrand(18)).range(0.98, 1.02), 150, 299, 544*Line.kr(1, 2, 6), 1789]))*EnvGen.kr(Env.perc), 0.5, 0.95)}).play
+Ndef(\gong, {FreeVerb.ar(Splay.ar(WhiteNoise.ar(Impulse.kr(0.2))+SinOsc.ar([(1234+1 )*LFTri.kr(0.1.rrand(18)).range(0.98, 1.02), 150, 299, 544*Line.kr(1, 2, 6), 1789]))*EnvGen.kr(Env.perc), 0.5, 0.95)}).play
+Ndef(\gong, {FreeVerb.ar(Splay.ar(WhiteNoise.ar(Impulse.kr(0.2))+SinOsc.ar([(1234+12 )*LFTri.kr(0.1.rrand(18)).range(0.98, 1.02), 150, 299, 544*Line.kr(1, 2, 6), 1789]))*EnvGen.kr(Env.perc), 0.5, 0.95)}).play
+~tremoloM1 = 2
+Ndef(\gong, {FreeVerb.ar(Splay.ar(WhiteNoise.ar(Impulse.kr(0.2))+SinOsc.ar([(1234+1 )*LFTri.kr(0.1.rrand(18)).range(0.98, 1.02), 150, 299, 544*Line.kr(1, 2, 6), 1789]))*EnvGen.kr(Env.perc), 0.5, 0.95)}).play
+
+Ndef(\gong, {FreeVerb.ar(Splay.ar(WhiteNoise.ar(Impulse.kr(0.2))+SinOsc.ar([(1234+10 )*LFTri.kr(0.1.rrand(18)).range(0.98, 1.02), 150, 299, 544*Line.kr(1, 2, 6), 1789]))*EnvGen.kr(Env.perc), 0.5, 0.95)}).play
+Ndef(\gong, {FreeVerb.ar(Splay.ar(WhiteNoise.ar(Impulse.kr(0.2))+SinOsc.ar([(1234+12 )*LFTri.kr(0.1.rrand(18)).range(0.98, 1.02), 150, 299, 544*Line.kr(1, 2, 6), 1789]))*EnvGen.kr(Env.perc), 0.5, 0.95)}).play
+Ndef(\gong, {FreeVerb.ar(Splay.ar(WhiteNoise.ar(Impulse.kr(0.2))+SinOsc.ar([(1234+71 )*LFTri.kr(0.1.rrand(18)).range(0.98, 1.02), 150, 299, 544*Line.kr(1, 2, 6), 1789]))*EnvGen.kr(Env.perc), 0.5, 0.95)}).play
+condition not met :(
+~tremoloH2 = 1
+condition not met :(
+Ndef(\gong, {FreeVerb.ar(Splay.ar(WhiteNoise.ar(Impulse.kr(0.2))+SinOsc.ar([(1234+1 )*LFTri.kr(0.1.rrand(18)).range(0.98, 1.02), 150, 299, 544*Line.kr(1, 2, 6), 1789]))*EnvGen.kr(Env.perc), 0.5, 0.95)}).play
+Ndef(\gong, {FreeVerb.ar(Splay.ar(WhiteNoise.ar(Impulse.kr(0.2))+SinOsc.ar([(1234+71 )*LFTri.kr(0.1.rrand(18)).range(0.98, 1.02), 150, 299, 544*Line.kr(1, 2, 6), 1789]))*EnvGen.kr(Env.perc), 0.5, 0.95)}).play
+~snippet2.stop;
+~snippet1.stop;
+KAGOOOOOM!!! // sound coming soon...
+
+  ____   ____   ____  __  __ _
+ |  _ \ / __ \ / __ \|  \/  | |
+ | |_) | |  | | |  | | \  / | |
+ |  _ <| |  | | |  | | |\/| | |
+ | |_) | |__| | |__| | |  | |_|
+ |____/ \____/ \____/|_|  |_(_)      THE END ¯\('…')/¯
