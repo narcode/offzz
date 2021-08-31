@@ -85,7 +85,7 @@ OSCdef(\ckar2, {arg msg;
 			var tree = key[0].findRegexpAt("[0-9]+")[0];
 			var room = msg[2].linlin(-1, 1, 1, 30);
 			msg.postln;
-	  Ndef(\explodeT, {CombN.ar(BrownNoise.ar(LFNoise2.ar(2).range(0.01, 0.4)*EnvGen.kr(Env.perc(1, 0.3)))+SinOsc.ar(Line.kr(50, 345, 1), mul:0.3)*LFSaw.kr(Line.kr(1,4, 3).range(0.001, 0.4)), 0.2, 0.2, 4)*EnvGen.kr(Env.perc(0.2, 8))}).play(0,2);
+	  Ndef(\explodeT, {CombN.ar(BrownNoise.ar(LFNoise2.ar(2).range(0.01, 0.4)*EnvGen.kr(Env.perc(1, 0.3)))+SinOsc.ar(Line.kr(50, 345, 1), mul:0.8)*LFSaw.kr(Line.kr(1,4, 3).range(0.001, 0.4)), 0.2, 0.2, 4)*2*EnvGen.kr(Env.perc(0.2, 8))}).play(2,2);
 }, 'ckartreetransform');
 
 OSCdef(\ckar1, {arg msg;
@@ -97,7 +97,7 @@ OSCdef(\ckar1, {arg msg;
 // public
 OSCdef(\arquatic_public, {arg msg;
 			msg.postln;
-		  Ndef(\explodeT, {CombN.ar(BrownNoise.ar(LFNoise2.ar(2).range(0.01, 0.4)*EnvGen.kr(Env.perc(1, 0.3)))+SinOsc.ar(Line.kr(50, 345, 1), mul:0.3)*LFSaw.kr(Line.kr(1,4, 3).range(0.001, 0.4)), 0.2, 0.2, 4)*EnvGen.kr(Env.perc(0.2, 8))}).play(0,2);
+		  Ndef(\explodeT, {CombN.ar(BrownNoise.ar(LFNoise2.ar(2).range(0.01, 0.4)*EnvGen.kr(Env.perc(1, 0.3)))+SinOsc.ar(Line.kr(50, 345, 1), mul:0.8)*LFSaw.kr(Line.kr(1,4, 3).range(0.001, 0.4)), 0.2, 0.2, 4)*2*EnvGen.kr(Env.perc(0.2, 8))}).play(2,2);
 }, 'public_transform');
 
 // OSC addresses:
@@ -105,6 +105,8 @@ OSCdef(\arquatic_public, {arg msg;
 'ckartree'
 // continous msgs:
 'ckarvalue'
+
+
 
 
 //// color and intensity
